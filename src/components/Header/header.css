@@ -1,0 +1,38 @@
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    height: 68px;
+  }
+
+header nav {
+    display: flex;
+    justify-content: right;
+    Width: 309px;
+    Height: 34px;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+  }
+    
+
+  .header__logo {
+    width: 145px;
+    height: 47px;
+    position: absolute;
+    left: 100px;
+    top: 40px;
+  }
+
+  .header__link {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34.22px;
+    margin-right: 20px;
+}
+  
