@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
+    width: 1240px;
     height: 68px;
   }
 
@@ -12,16 +12,11 @@ header nav {
     justify-content: right;
     Width: 309px;
     Height: 34px;
-    position: absolute;
-    right: 100px;
-    top: 50px;
   }
-    
 
   .header__logo {
     width: 145px;
     height: 47px;
-    position: absolute;
     left: 100px;
     top: 40px;
   }

@@ -1,10 +1,10 @@
-import banner from '../../assets/img/banner.jpg'
+import './banner.css'
 
 function Banner() {
     return (
       <div className="banner">
-        <img alt="banner" src={banner} className="banner__img"></img>
-        <h1> Chez vous, partout et ailleurs </h1>
+        {/*<img alt="banner" src={banner} className="banner__img"></img>*/}
+        <h1 className="slogan"> Chez vous, partout et ailleurs </h1>
       </div>
       
     )

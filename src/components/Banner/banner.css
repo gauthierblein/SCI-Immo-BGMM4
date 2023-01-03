@@ -1,0 +1,23 @@
+.banner {
+    Width: 1240px;
+    Height: 223px;
+    Top: 171px;
+    Left: 100px;
+    border-radius : 25px; 
+    Opacity : 30%;
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(../../assets/img/banner.jpg);
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.slogan {
+    font-weight: 500;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 68.45px;
+}

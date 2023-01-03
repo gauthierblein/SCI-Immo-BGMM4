@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
-import Products from './pages/Products'
+import Product from './pages/Product'
 import Page404 from './pages/Page404'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -19,7 +19,7 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/products/:productNumber" element={<Products />} />
+          <Route path="/product=:id" element={<Product />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
         <Footer />
