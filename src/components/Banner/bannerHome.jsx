@@ -1,6 +1,6 @@
-import './banner.css'
+import './bannerHome.css'
 
-function Banner() {
+function BannerHome() {
     return (
       <div className="banner">
         {/*<img alt="banner" src={banner} className="banner__img"></img>*/}
@@ -10,5 +10,5 @@ function Banner() {
     )
   }
   
-  export default Banner
+  export default BannerHome
   

@@ -1,0 +1,16 @@
+.banner {
+    Width: 1240px;
+    Height: 223px;
+    border-radius : 25px; 
+    Opacity : 90%;
+    background-image:  url(../../assets/img/banner-about.jpg);
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+

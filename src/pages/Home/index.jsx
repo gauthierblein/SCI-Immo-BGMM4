@@ -1,11 +1,11 @@
-import Banner from "../../components/Banner"
+import BannerHome from "../../components/Banner/bannerHome"
 import Card from "../../components/Card"
 
 
 function Home() {
   return (
     <div>
-      <Banner/>
+      <BannerHome/>
 
       <Card/>
     </div>

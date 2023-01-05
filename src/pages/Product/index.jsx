@@ -1,14 +1,27 @@
 import { useParams } from 'react-router-dom'
+import ProductInfo from '../../components/ProductInfo'
+import Page404 from '../../components/ErrorPageNotFound'
+import data from '../../data.json'
+import SlideShow from '../../components/SlideShow'
 
-function Products() {
-  const {id} = useParams('/produit=')
-  
-  return (
-    <div>
-      <h1>Nos produits</h1>
-      <h2>Produit {id}</h2>
-    </div>
-  )
+const Product = () => {
+
+  const id = useParams('/products=')
+  const listProducts = Object.values(data)
+  const product = listProducts.find((product) => product.id === id.Id);
+
+  if (product) {
+    return (
+      <div>
+        <SlideShow/>
+        <ProductInfo/>
+      </div>
+
+    )
+  } else {
+    return <Page404 />
+  }
 }
 
-export default Products
+
+export default Product

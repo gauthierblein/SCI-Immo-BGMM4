@@ -1,0 +1,93 @@
+.productInfo__container {
+    background-color: white ;
+    width: 1240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*Header*/
+.productInfo__header {
+    color: #FF6060;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.productInfo__title {
+    font-weight: 500;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 51.34px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.productInfo__host {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25.67px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.productInfo__host-name {
+    height: 52px;
+    width: 80px;
+}
+
+.productInfo__host-img {
+    height: 64px;
+    width: 64px;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+/*Location*/
+.productInfo__location {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25.76px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #FF6060;
+}
+
+
+/*Tags et Ratings*/
+.product__tagsAndRatings {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.product__tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+  
+.product__tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 115px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.96px;
+    background-color: #FF6060;
+    color: white;
+    padding: 0.3rem 1rem;
+    margin-right: 1em;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
