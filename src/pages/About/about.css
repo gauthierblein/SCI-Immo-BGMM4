@@ -1,0 +1,10 @@
+.dropdown-wrapper {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 1023px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1023px;
+}

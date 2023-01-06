@@ -91,3 +91,15 @@
     border-radius: 5px;
 }
 
+/*Dropdown infos*/
+.productdropdown-container {
+    display: flex;
+    width: 1240px;
+    justify-content: space-between;
+}
+
+.productdropdown {
+    width: 582px;
+    height: 300px;
+}
+

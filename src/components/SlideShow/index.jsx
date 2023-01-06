@@ -1,37 +1,50 @@
-import { useParams } from 'react-router-dom'
-import data from '../../data.json'
+import { useState } from 'react'
 import './slideShow.css'
 import chevron from '../../assets/img/Chevron.png'
 
 
-function SlideShow() {
-    const id = useParams('/products=')
-    const listProducts = Object.values(data)
-    const product = listProducts.find((product) => product.id === id.Id);
-    const productPictures = (product.pictures)
-    console.log(productPictures)
+function SlideShow(current) {
+    
+    let [index, setIndex] = useState(0)
+    const length = current.props.length;
 
-    if (productPictures.length === 1) {
+    function sliderNext () {
+        if (index === length - 1) {
+          setIndex(0)
+        } else {
+          setIndex(index + 1)
+        }
+      }
+
+      function sliderPrev () {
+        if (index === 0) {
+          setIndex(length - 1)
+        } else {
+          setIndex(index - 1)
+        }
+      }
+
+    if (length === 1) {
     return (
         <div className='slideShow__container'>
-            <img className='slider__img'src={product.pictures[0]} alt="imageSlider"/>
+            <img className='slider__img'src={current.props[index]} alt="imageSlider"/>
 
         </div>
     )} else {
     return (
         
             <div className='slideShow__container'>
-                <img className='slider__img'src={product.pictures[0]} alt="imageSlider"/>
+                <img className='slider__img'src={current.props[index]} alt="imageSlider"/>
                 <div className='chevronContainer'>
                     <img
                 src={chevron}
-                
+                onClick={sliderPrev}
                 className="chevronPrev"
                 alt="chevron-previous"
                     />
                     <img
                 src={chevron}
-                
+                onClick={sliderNext}
                 className="chevronNext"
                 alt="chevron-previous"
                     />

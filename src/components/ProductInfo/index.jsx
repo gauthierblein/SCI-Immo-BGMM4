@@ -1,16 +1,13 @@
-import { useParams } from 'react-router-dom'
 import './productInfo.css'
+import Rating from "../Rating";
+import Collapse from '../Collapse';
 
-import data from '../../data.json'
-
-function ProductInfo () {
-
-  const id = useParams('/products=')
-  const listProducts = Object.values(data)
-  const product = listProducts.find((product) => product.id === id.Id);
+function ProductInfo (current) {
+  const product = current.props
 
     return (
       <div className='productInfo__container'>
+
         <div className='productInfo__header'>
             <h2 className='productInfo__title'>{product.title}</h2>
             <div className='productInfo__host'>
@@ -18,23 +15,29 @@ function ProductInfo () {
                 <img className='productInfo__host-img' src={product.host.picture} alt="{product.host.name}" />
             </div>
         </div>
+
         <h3 className='productInfo__location'>{product.location}</h3>
         <div className="product__tagsAndRatings">
-            <ul className="product__tags">
+          <ul className="product__tags">
             {product.tags.map((k, index) => (
                  <li className="product__tag" key={index}>
                     {k}
                 </li>
             ))}
           </ul>
-          <div className="product__rating">
-            {product.rating}
+          <Rating rating={product.rating} />
+        </div>
+
+        <div className="productdropdown-container">
+          <div className="productdropdown">
+            <Collapse props={product.description} title={'Description'} />
+          </div>
+          <div className="productdropdown">
+            <Collapse props={product.equipments} title={'Equipements'} />
           </div>
         </div>
-        <div className="dropdown-parent">
-            <p> Description : {product.description}  </p>
-            <p> Equipements : {product.equipments}  </p>
-      </div>
+
+
       </div>
     )
 

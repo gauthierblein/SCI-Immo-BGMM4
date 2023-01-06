@@ -13,8 +13,8 @@ const Product = () => {
   if (product) {
     return (
       <div>
-        <SlideShow/>
-        <ProductInfo/>
+        <SlideShow props={product.pictures}/>
+        <ProductInfo props={product}/>
       </div>
 
     )

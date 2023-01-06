@@ -1,11 +1,9 @@
-import './bannerHome.css'
+import './bannerAbout.css'
 
 function BannerAbout() {
     return (
-      <div className="banner">
-
-      </div>
-      
+      <div className="bannerAbout">
+      </div> 
     )
   }
   

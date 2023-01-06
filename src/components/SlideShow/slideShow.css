@@ -31,9 +31,20 @@
 .chevronPrev {
     transform: rotate(90deg);
     scale: 1.8;
+    opacity: 0.9;
   }
-  
-  .chevronNext {
+
+.chevronNext {
     transform: rotate(-90deg);
     scale: 1.8;
+    opacity: 0.9;
+}
+
+.chevronPrev:hover, .chevronNext:hover  {
+    scale: 2;
+    opacity: 1;
+    transition: ease-in-out, 0.25s;
+    filter: contrast(200%);
+    cursor: pointer;
   }
+  
