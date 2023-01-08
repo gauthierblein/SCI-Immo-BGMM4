@@ -1,5 +1,8 @@
 .productInfo__container {
     background-color: white ;
+    position: absolute;
+    left: 100px;
+    top: 573px;
     width: 1240px;
     display: flex;
     flex-direction: column;
@@ -13,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content:space-between;
+    margin: 0;
 }
 
 .productInfo__title {
@@ -20,8 +24,6 @@
     font-size: 36px;
     font-family: 'Montserrat', sans-serif;
     line-height: 51.34px;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .productInfo__host {
@@ -65,6 +67,7 @@
     display: flex;
     align-items: center;
     justify-content:space-between;
+    margin-bottom: 31px;
 }
 
 .product__tags {
@@ -88,7 +91,7 @@
     padding: 0.3rem 1rem;
     margin-right: 1em;
     margin-top: 1em;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 /*Dropdown infos*/

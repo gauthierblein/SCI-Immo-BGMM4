@@ -1,4 +1,7 @@
 .bannerAbout {
+    position: absolute;
+    left: 100px;
+    top: 152px;
     Width: 1240px;
     Height: 223px;
     border-radius : 25px; 

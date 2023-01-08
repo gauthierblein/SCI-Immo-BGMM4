@@ -1,11 +1,12 @@
 import './bannerHome.css'
 
-function BannerHome() {
+function BannerHome ({ image, title }) {
     return (
-      <div className="banner">
-        {/*<img alt="banner" src={banner} className="banner__img"></img>*/}
-        <h1 className="slogan"> Chez vous, partout et ailleurs </h1>
-      </div>
+        <div className="bannerHome__container">
+          <img src={image} alt="" className="bannerHome__img" />
+          <div className="bannerHome__overlay"></div>
+          <h2 className="bannerHome__title">{title}</h2>
+        </div>
       
     )
   }

@@ -1,9 +1,15 @@
 import React from 'react'
+import Header from "../../components/Header"
 import Error from '../../components/ErrorPageNotFound'
+import Footer from "../../components/Footer"
 
-const PageError404 = () => {
+function PageError404 () {
   return (
-    <Error/>
+    <>
+      <Header/>
+      <Error/>
+      <Footer/>
+    </>
   )
 }
 

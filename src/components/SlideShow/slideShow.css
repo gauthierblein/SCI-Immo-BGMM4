@@ -1,5 +1,7 @@
 .slideShow__container {
-    position: relative;
+    position: absolute;
+    left: 100px;
+    top: 152px;
     width: 1240px;
     height: 415px;
     background: #FFFFFF;

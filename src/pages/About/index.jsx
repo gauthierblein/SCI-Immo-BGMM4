@@ -1,5 +1,7 @@
+import Header from "../../components/Header"
 import BannerAbout from '../../components/Banner/bannerAbout'
 import Collapse from '../../components/Collapse'
+import Footer from "../../components/Footer"
 import './about.css'
 
 const aboutInformations = [
@@ -24,12 +26,14 @@ const aboutInformations = [
   function About () {
     return (
     <div>
+      <Header/>
       <BannerAbout/>
       <div className="dropdown-wrapper">
         {aboutInformations.map((info, index) => {
           return <Collapse props={info.body} title={info.title} key={index} />
         })}
       </div>
+      <Footer/>
     </div>
   )
 }

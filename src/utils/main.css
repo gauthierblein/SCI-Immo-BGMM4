@@ -1,4 +1,28 @@
-.main {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    width: 1440px;
 }
+
+body {
+  max-width: 1440px;
+  height:100%;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+
+/* Tablets */
+@media screen  and (min-width: 750px) and (max-width: 950px) {
+    body {
+        max-width: 950px;
+      }
+  }
+  
+  /* Mobiles */
+  @media screen and (max-width: 750px) {
+    body {
+      max-width: 750px;
+    }
+  }

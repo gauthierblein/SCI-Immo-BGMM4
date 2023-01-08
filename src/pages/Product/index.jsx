@@ -1,11 +1,12 @@
 import { useParams } from 'react-router-dom'
+import Header from "../../components/Header"
 import ProductInfo from '../../components/ProductInfo'
-import Page404 from '../../components/ErrorPageNotFound'
+import Error404 from '../../pages/Error404'
 import data from '../../data.json'
 import SlideShow from '../../components/SlideShow'
+import Footer from "../../components/Footer"
 
-const Product = () => {
-
+function Product () {
   const id = useParams('/products=')
   const listProducts = Object.values(data)
   const product = listProducts.find((product) => product.id === id.Id);
@@ -13,13 +14,15 @@ const Product = () => {
   if (product) {
     return (
       <div>
+        <Header/>
         <SlideShow props={product.pictures}/>
         <ProductInfo props={product}/>
+        <Footer/>
       </div>
 
     )
   } else {
-    return <Page404 />
+    return <Error404/>
   }
 }
 
