@@ -5,24 +5,26 @@
     box-sizing: border-box;
 }
 
+html {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   max-width: 1440px;
   height:100%;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   position: relative;
 }
 
-
-/* Tablets */
-@media screen  and (min-width: 750px) and (max-width: 950px) {
-    body {
-        max-width: 950px;
-      }
-  }
   
   /* Mobiles */
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 850px) {
     body {
-      max-width: 750px;
+      width: auto;
+      height: auto;
     }
   }

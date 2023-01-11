@@ -1,7 +1,6 @@
 .bannerAbout {
-    position: absolute;
-    left: 100px;
-    top: 152px;
+    margin-left: auto; margin-right: auto;
+    margin-top: 171px;
     Width: 1240px;
     Height: 223px;
     border-radius : 25px; 
@@ -16,4 +15,11 @@
     margin-bottom: 2em;
 }
 
-
+/* Mobiles */
+@media screen and (max-width: 850px) {
+  .bannerAbout {
+    margin-top:20px;
+    margin-left: 20px;
+    width: 92%;
+    }
+}

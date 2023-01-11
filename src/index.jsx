@@ -18,7 +18,6 @@ ReactDOM.render(
           <Route path="/products/:Id" element={<Product />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

@@ -10,11 +10,10 @@ to {color : #e03333;
 
 /* Desktop */
 header {
-    position: absolute;
     width: 1240px;
     height: 68px;
-    left: 100px;
-    top: 40px;
+    margin-left: auto; margin-right: auto;
+    margin-top: 40px;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -44,37 +43,39 @@ header nav {
     line-height: 34.22px;
 }
 
+.header__link:first-child {
+  margin-right: 57px;
+}
+
 .header__link:hover {
   animation: brillance .4s forwards;
   text-decoration: underline;
 }
 
-/* Tablets */
-@media screen  and (min-width: 750px) and (max-width: 950px) {
-}
 
 /* Mobiles */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   header {
-    position: absolute;
-    top:0px; left: 0px;
-    width: 100%;
-    margin-left: auto; margin-right: auto;
-    border:1px solid red;
+    margin-top:20px;
+    margin-left: 20px;
+    width: 96%;
   }
   .header__logo {
     width: 145px;
     height: 47px;
-    padding-left: 10px;
+    padding-left: 20px;
   } 
   header nav {
     display: flex;
     justify-content: space-between;
-    Width: 140px;
-    border:1px solid blue;
+    Width: 170px;
+    padding-right: 20px;
   }
   .header__link {
     font-size: 16px;
+  }
+  .header__link:first-child {
+    margin-right: 10px;
   }
 }
 

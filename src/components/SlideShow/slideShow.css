@@ -1,13 +1,13 @@
 .slideShow__container {
-    position: absolute;
-    left: 100px;
-    top: 152px;
+    margin-left: auto; margin-right: auto;
+    margin-top: 15px;
     width: 1240px;
     height: 415px;
     background: #FFFFFF;
     border-radius: 25px;
     margin-top:5px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .slider__img {
@@ -16,17 +16,17 @@
     border-radius: 10px;
     object-fit: cover;
     opacity: 0.9;
-    position: absolute;
 }
 
 .chevronContainer{
+  height: 79.2px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  position: relative;
-  height: 79.2px;
-  top: 135px;
+  position: absolute;
+  top: 165px;
   color: white;
 }
 
@@ -49,4 +49,14 @@
     filter: contrast(200%);
     cursor: pointer;
   }
+
+
+  /* Mobiles */
+@media screen and (max-width: 850px) {
+  .slideShow__container {
+      margin-left: auto; margin-right: auto;
+      width: 335px;
+      height: 255px;
+  }
+}
   

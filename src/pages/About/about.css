@@ -1,11 +1,26 @@
 .dropdown-wrapper {
-    position: absolute;
-    left: 208px;
-    top: 484px;
+    margin-left: auto; margin-right: auto;
+    margin-top: 31px;
     width: 1023px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 1023px;
+}
+
+.dropdown-wrapper p {
+  font-size: 24px;
+}
+
+
+/* Mobiles */
+@media screen and (max-width: 850px) {
+    .dropdown-wrapper {
+      margin-left: 20px;
+      width: 92%;
+    }
+    .dropdown-wrapper p {
+      font-size: 12px;
+    }
 }

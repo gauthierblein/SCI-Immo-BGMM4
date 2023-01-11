@@ -1,8 +1,7 @@
 .productInfo__container {
     background-color: white ;
-    position: absolute;
-    left: 100px;
-    top: 573px;
+    margin-left: auto; margin-right: auto;
+    margin-top: 30px;
     width: 1240px;
     display: flex;
     flex-direction: column;
@@ -22,14 +21,12 @@
 .productInfo__title {
     font-weight: 500;
     font-size: 36px;
-    font-family: 'Montserrat', sans-serif;
     line-height: 51.34px;
 }
 
 .productInfo__host {
     font-weight: 500;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
     line-height: 25.67px;
     margin-top: 0;
     margin-bottom: 0;
@@ -53,7 +50,6 @@
 .productInfo__location {
     font-weight: 500;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
     line-height: 25.76px;
     margin-top: 0;
     margin-bottom: 0;
@@ -82,15 +78,14 @@
     justify-content: center;
     height: 25px;
     width: 115px;
-    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
     font-weight: 500;
     font-size: 14px;
     line-height: 19.96px;
     background-color: #FF6060;
     color: white;
-    padding: 0.3rem 1rem;
-    margin-right: 1em;
-    margin-top: 1em;
+    margin-right: 10px;
+    margin-top: 10px;
     border-radius: 10px;
 }
 
@@ -104,5 +99,18 @@
 .productdropdown {
     width: 582px;
     height: 300px;
+}
+
+.dropdown-text-open > ul > li {
+    list-style-type: none;
+    padding-left: 2px;
+}
+
+/* Mobiles */
+@media screen and (max-width: 850px) {
+    .productInfo__container {
+        margin-left: auto; margin-right: auto;
+        width: 335%;
+    }
 }
 
