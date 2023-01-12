@@ -23,20 +23,19 @@ header {
 header nav {
     display: flex;
     justify-content: right;
-    Width: 309px;
-    Height: 34px;
+    width: 309px;
+    height: 34px;
   }
 
-  .header__logo {
+.header__logo {
     width: 210.32px;
     height: 68px;
     left: 100px;
     top: 40px;
   }
 
-  .header__link {
+.header__link {
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     color: #FF6060;
     font-weight: 500;
     font-size: 24px;
@@ -44,12 +43,12 @@ header nav {
 }
 
 .header__link:first-child {
-  margin-right: 57px;
+    margin-right: 57px;
 }
 
 .header__link:hover {
-  animation: brillance .4s forwards;
-  text-decoration: underline;
+    animation: brillance .4s forwards;
+    text-decoration: underline;
 }
 
 
@@ -58,18 +57,14 @@ header nav {
   header {
     margin-top:20px;
     margin-left: 20px;
-    width: 96%;
+    width: 92%;
   }
   .header__logo {
     width: 145px;
     height: 47px;
-    padding-left: 20px;
   } 
   header nav {
-    display: flex;
-    justify-content: space-between;
-    Width: 170px;
-    padding-right: 20px;
+    width: 170px;
   }
   .header__link {
     font-size: 16px;

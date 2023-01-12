@@ -1,3 +1,4 @@
+import './rating.css'
 import redStar from "../../assets/img/redStar.svg";
 import greyStar from "../../assets/img/greyStar.svg";
 

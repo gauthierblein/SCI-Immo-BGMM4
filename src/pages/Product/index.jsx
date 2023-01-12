@@ -22,7 +22,7 @@ function Product () {
 
     )
   } else {
-    return <Error404/>
+      return <Error404/>
   }
 }
 

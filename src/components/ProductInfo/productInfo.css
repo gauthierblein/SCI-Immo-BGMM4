@@ -1,27 +1,67 @@
+/*Main infos*/
 .productInfo__container {
     background-color: white ;
     margin-left: auto; margin-right: auto;
     margin-top: 30px;
     width: 1240px;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
 }
 
-/*Header*/
-.productInfo__header {
-    color: #FF6060;
-    width: 100%;
+.container-left {
+    width: 70%;
+    height: auto;
     display: flex;
-    align-items: center;
-    justify-content:space-between;
-    margin: 0;
+    flex-direction: column;
+    color: #FF6060;
 }
 
 .productInfo__title {
     font-weight: 500;
     font-size: 36px;
     line-height: 51.34px;
+}
+
+.productInfo__location {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.76px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.product__tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+  
+.product__tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 115px;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.96px;
+    background-color: #FF6060;
+    color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.container-right {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    color: #FF6060;
+    align-items: flex-end;
 }
 
 .productInfo__host {
@@ -46,59 +86,18 @@
     border-radius: 50px;
 }
 
-/*Location*/
-.productInfo__location {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25.76px;
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #FF6060;
-}
-
-
-/*Tags et Ratings*/
-.product__tagsAndRatings {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    margin-bottom: 31px;
-}
-
-.product__tags {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-}
-  
-.product__tag {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25px;
-    width: 115px;
-    white-space: nowrap;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 19.96px;
-    background-color: #FF6060;
-    color: white;
-    margin-right: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
-}
 
 /*Dropdown infos*/
 .productdropdown-container {
     display: flex;
     width: 1240px;
+    margin-left: auto; margin-right: auto;
     justify-content: space-between;
 }
 
 .productdropdown {
     width: 582px;
-    height: 300px;
+    height: auto;
 }
 
 .dropdown-text-open > ul > li {
@@ -110,7 +109,67 @@
 @media screen and (max-width: 850px) {
     .productInfo__container {
         margin-left: auto; margin-right: auto;
-        width: 335%;
+        width: 335px;
+        flex-direction: column;
+    }
+    .container-left, .container-right {
+        margin-left: auto; margin-right: auto;
+        width: 100%;
+    }
+    .container-right {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .productInfo__title {
+        font-size: 18px;
+        line-height: 25.67px;
+    }
+    .productInfo__location {
+        font-size: 14px;
+        line-height: 19.96px;
+    }
+    .product__tag {
+        height: 18px;
+        width: 84px;
+        white-space: nowrap;
+        font-size: 10px;
+        line-height: 14.26px;
+        border-radius: 5px;
+    }
+    .productInfo__host {
+        width: 50%;
+        font-size: 12px;
+        line-height: 17.11px;
+        justify-content: end;
+    }
+    .productInfo__host-name {
+        height: 33px;
+        width: 93px;
+        font-size: 12px;
+        line-height: 17.11px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .productInfo__host-img {
+        height: 32px;
+        width: 32px;
+        font-size: 12px;
+        line-height: 17.11px;
+    }
+
+    .productdropdown-container {
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .productdropdown {
+        width: auto;
+        height: auto;
     }
 }
 

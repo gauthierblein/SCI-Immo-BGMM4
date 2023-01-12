@@ -2,3 +2,11 @@
     height: 30px;
     width: 30px;
 }
+
+/* Mobiles */
+@media screen and (max-width: 850px) {
+    .rating__icon {
+        height: 15px;
+        width: 15px;
+    }
+}
