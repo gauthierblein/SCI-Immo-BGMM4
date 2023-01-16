@@ -22,7 +22,7 @@
     font-weight: 500;
     font-size: 48px;
     line-height: 68.45px;
-    color: white;
+    color: var(--color-two);
 }
 
 .bannerHome__overlay {
@@ -45,11 +45,9 @@
         margin-top: 20px;
         margin-bottom: 22px;
     }
-
     .bannerHome__img {
         width: 100%;
     }
-
     .bannerHome__title {
         position: absolute;
         width: 70%;
@@ -58,6 +56,6 @@
         font-weight: 500;
         font-size: 24px;
         line-height: 24px;
-        color: white;
+        color: var(--color-two);
     }
 }

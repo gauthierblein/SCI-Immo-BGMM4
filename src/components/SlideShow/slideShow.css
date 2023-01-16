@@ -3,7 +3,7 @@
     margin-top: 15px;
     width: 1240px;
     height: 415px;
-    background: #FFFFFF;
+    background: var(--color-two);
     border-radius: 25px;
     margin-top:5px;
     margin-bottom: 10px;
@@ -27,7 +27,7 @@
   padding: 10px;
   position: absolute;
   top: 165px;
-  color: white;
+  color: var(--color-two);
 }
 
 .chevronPrev {

@@ -7,7 +7,7 @@
     Opacity : 90%;
     background-image:  url(../../assets/img/banner-about.jpg);
     background-size: cover;
-    color: #ffffff;
+    color: var(--color-two);
     display: flex;
     align-items: center;
     justify-content: center;
