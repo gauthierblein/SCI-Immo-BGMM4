@@ -149,7 +149,7 @@
         font-size: 12px;
         line-height: 17.11px;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
         flex-wrap: wrap;
     }
