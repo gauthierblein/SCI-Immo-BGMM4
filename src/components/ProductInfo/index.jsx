@@ -3,6 +3,7 @@ import Rating from "../Rating";
 import Collapse from '../Collapse';
 
 function ProductInfo (current) {
+  console.log(current)
   const product = current.props
 
     return (

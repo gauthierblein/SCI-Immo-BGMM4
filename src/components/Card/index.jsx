@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import data from '../../data.json'
 import './card.css'
 
-function Card ({ image, title }) {
+function Card () {
     return (
         <div className='gallery'>
             {data.map((loc, index) => (  

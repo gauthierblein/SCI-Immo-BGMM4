@@ -1,3 +1,10 @@
+PROJET 7 de la formation 'Developeur Web' d'OpenClassRooms
+
+Développement par Gauthier B en janvier 2023
+
+**************
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
