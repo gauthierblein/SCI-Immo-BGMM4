@@ -16,10 +16,19 @@
 }
 
 /* Mobiles */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
   .bannerAbout {
     margin-top:20px;
-    margin-left: 20px;
+    margin-left: auto; margin-right: auto;
     width: 92%;
+    }
+}
+
+/* Tablettes */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .bannerAbout {
+    margin-top:20px;
+    margin-left: auto; margin-right: auto;
+    width: 94%;
     }
 }

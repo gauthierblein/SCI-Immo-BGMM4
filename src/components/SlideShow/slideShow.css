@@ -52,11 +52,11 @@
 
 
 /* Mobiles */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
   .slideShow__container {
       margin-left: auto; margin-right: auto;
-      width: 335px;
-      height: 255px;
+      width: 94%;
+      height: 350px;
   }
   .chevronContainer {
     position: absolute;
@@ -64,3 +64,16 @@
   }
 }
   
+
+/* Tablettes */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .slideShow__container {
+    margin-left: auto; margin-right: auto;
+    width: 90%;
+    height: 255px;
+  }
+  .chevronContainer {
+    position: absolute;
+    top: 80px;
+  }
+}

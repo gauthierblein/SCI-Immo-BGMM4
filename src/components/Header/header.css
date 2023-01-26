@@ -59,24 +59,45 @@ header nav {
 
 
 /* Mobiles */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
   header {
     margin-top:20px;
-    margin-left: 20px;
-    width: 92%;
+    margin-left: auto; margin-right: auto;
+    width: 94%;
   }
   .header__logo {
     width: 145px;
     height: 47px;
   } 
   header nav {
-    width: 170px;
+    width: 60%;
   }
   .header__link {
-    font-size: 16px;
+    font-size: 12px;
   }
   .header__link:first-child {
     margin-right: 10px;
   }
 }
 
+/* Tablettes */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  header {
+    margin-top:30px;
+    margin-left: auto; margin-right: auto;
+    width: 90%;
+  }
+  .header__logo {
+    width: 203px;
+    height: 61.1px;
+  } 
+  header nav {
+    width: 60%;
+  }
+  .header__link {
+    font-size: 18px;
+  }
+  .header__link:first-child {
+    margin-right: 15px;
+  }
+}

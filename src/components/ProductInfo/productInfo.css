@@ -106,10 +106,10 @@
 }
 
 /* Mobiles */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
     .productInfo__container {
         margin-left: auto; margin-right: auto;
-        width: 335px;
+        width: 94%;
         flex-direction: column;
     }
     .container-left, .container-right {
@@ -129,13 +129,15 @@
         font-size: 14px;
         line-height: 19.96px;
     }
-    .product__tag {
-        height: 18px;
-        width: 84px;
+    .product__tags {
+        width: 100%;
+        flex-direction: row;
         white-space: nowrap;
         font-size: 10px;
         line-height: 14.26px;
         border-radius: 5px;
+        margin-top: 5px;
+        margin-bottom: 20px;
     }
     .productInfo__host {
         width: 50%;
@@ -163,8 +165,8 @@
     .productdropdown-container {
         display: flex;
         flex-direction: column;
-        width: 92%;
-        margin-left: 20px;
+        width: 94%;
+        margin-left: auto; margin-right: auto;
         margin-top: 20px;
     }
     .productdropdown {
@@ -173,3 +175,66 @@
     }
 }
 
+/* Tablettes */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .productInfo__container {
+        margin-left: auto; margin-right: auto;
+        width: 90%;
+        flex-direction: column;
+    }
+    .container-left, .container-right {
+        margin-left: auto; margin-right: auto;
+        width: 100%;
+    }
+    .container-right {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .productInfo__title {
+        font-size: 26px;
+    }
+    .productInfo__location {
+        font-size: 18px;
+    }
+    .product__tags {
+        width: 100%;
+        flex-direction: row;
+        white-space: nowrap;
+        font-size: 12px;
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .productInfo__host {
+        width: 50%;
+        font-size: 14px;
+        justify-content: flex-end;
+    }
+    .productInfo__host-name {
+        height: 33px;
+        width: 93px;
+        font-size: 12px;
+        line-height: 17.11px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .productInfo__host-img {
+        height: 50px;
+        width: 50px;
+        font-size: 16px;
+    }
+    .productdropdown-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto; margin-right: auto;
+        margin-top: 20px;
+    }
+    .productdropdown {
+        width: auto;
+        height: auto;
+    }
+  }

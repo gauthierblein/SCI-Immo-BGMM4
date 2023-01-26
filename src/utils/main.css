@@ -24,11 +24,18 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 850px) {
-  
+/* Mobiles */
+@media screen and (max-width: 768px) {
   body {
-      width: auto;
-      height: auto;
+    width: auto;
+    height: auto;
   }
 }
 
+/* Tablettes */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  body {
+    max-width: auto;
+    height: auto;
+  }
+}

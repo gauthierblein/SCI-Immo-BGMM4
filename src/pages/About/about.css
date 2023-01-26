@@ -16,12 +16,23 @@
 
 
 /* Mobiles */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
     .dropdown-wrapper {
-      margin-left: 20px;
+      margin-left: auto; margin-right: auto;
       width: 92%;
     }
     .dropdown-wrapper p {
       font-size: 12px;
     }
+}
+
+/* Tablettes */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .dropdown-wrapper {
+    margin-left: auto; margin-right: auto;
+    width: 90%;
+  }
+  .dropdown-wrapper p {
+    font-size: 16px;
+  }
 }

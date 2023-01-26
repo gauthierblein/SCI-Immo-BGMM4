@@ -56,9 +56,9 @@
 
 
 /* Mobiles */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
     .gallery {
-      margin-left: 20px;
+      margin-left: auto; margin-right: auto;
       width: 92%;
     }
     .thumb__link {
@@ -73,5 +73,26 @@
         position: absolute;
         Bottom: 15px;
         Left: 19.71px;
+    }
+}
+
+/* Tablettes */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .gallery {
+      margin-left: auto; margin-right: auto;
+      width: 90%;
+    }
+    .thumb__link {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    .thumb__title {
+        width: 70%;
+        position: absolute;
+        Bottom: 20px;
+        Left: 25px;
     }
 }
