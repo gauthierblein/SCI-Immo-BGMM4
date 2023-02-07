@@ -1,18 +1,20 @@
 import Header from "../../components/Header"
-import BannerHome from "../../components/Banner/bannerHome"
+import Banner from "../../components/Banner/banner"
 import Card from "../../components/Card"
 import Footer from "../../components/Footer"
-import image from '../../assets/img/banner-home.jpg'
+import image from '../../assets/img/banniere.png'
+import './home.css'
 
 
 function Home() {
 
-  const slogan = "Chez vous, partout et ailleurs"
+  const slogan = ""
 
   return (
     <>
       <Header/>
-      <BannerHome image={image} title={slogan}/>
+      <Banner image={image} title={slogan}/>
+      <div className="titleHome">Nos logements</div>
       <Card/>
       <Footer/>
     </>

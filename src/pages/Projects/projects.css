@@ -1,0 +1,22 @@
+/* Desktop */
+.projects-container {
+    margin-left: auto; margin-right: auto;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+    .projects-container {
+      margin-left: auto; margin-right: auto;
+      width: 92%;
+    }
+    .projects-container p {
+      font-size: 12px;
+    }
+}

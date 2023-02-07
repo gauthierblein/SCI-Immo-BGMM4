@@ -9,7 +9,7 @@ function Collapse ({ props, title }) {
     function toggleState () {setToggle(!toggle)}
 
     return (
-        <>
+        <div className='dropdown-container'>
           <div className='dropdown-header' onClick={toggleState}>
               <h2 className="dropdown-title">{title}</h2>
               <img    className={toggle ? 'chevron-ouvert' : 'chevron'}
@@ -29,7 +29,7 @@ function Collapse ({ props, title }) {
               ) : ( <p>{props}</p>)
               }
             </div>      
-        </>
+        </div>
     )
 }
 

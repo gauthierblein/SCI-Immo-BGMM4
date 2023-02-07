@@ -1,14 +1,21 @@
 import './footer.css'
-import footerLogo from '../../assets/img/LOGO_white.png'
+import { BsHouseFill } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
 
 function Footer() {
   const effectiveYear = new Date().getFullYear();
   
   return (
     <footer className="footer">
-      <img alt="footer_logo" src={footerLogo} className="logo"></img>
+      <div className="footer-logo">
+        <BsHouseFill size={30} />
+        BGMM4
+      </div>
+      <div className='footer-contact'>
+        <a href="mailto:sci.cgmn4@gmail.com"><HiOutlineMail size={30}/>sci.cgmn4@gmail.com</a>
+      </div>
       <p className="footer__text">
-        &copy; {effectiveYear} Kasa. All rights reserved
+        &copy; {effectiveYear} BGMM4. SCI Gestion immobilière. Tous droits réservés
       </p>
     </footer>
   )

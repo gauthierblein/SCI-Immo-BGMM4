@@ -1,5 +1,4 @@
 import './productInfo.css'
-import Rating from "../Rating";
 import Collapse from '../Collapse';
 
 function ProductInfo (current) {
@@ -20,13 +19,7 @@ function ProductInfo (current) {
             ))}
           </ul>
         </div>
-        <div className='container-right'>
-            <Rating rating={product.rating} />
-            <div className='productInfo__host'>
-              <h3 className='productInfo__host-name'>{product.host.name}</h3>
-              <img className='productInfo__host-img' src={product.host.picture} alt="{product.host.name}" />
-            </div>
-        </div>
+
       </div>
 
       <div className="productdropdown-container">

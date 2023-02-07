@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
+import Projects from './pages/Projects'
 import Product from './pages/Product'
 import Error404 from './pages/Error404'
 import '../src/utils/main.css'
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/products/:Id" element={<Product />} />
           <Route path="*" element={<Error404 />} />
         </Routes>

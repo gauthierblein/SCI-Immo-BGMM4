@@ -1,0 +1,31 @@
+.bannerHome__container {
+    width: 95%;
+    height: 150%;
+    margin-left: auto; margin-right: auto;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.bannerHome__img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+    .bannerHome__container {
+        margin-left: auto; margin-right: auto;
+        width: 92%;
+        height: 120px;
+        margin-top: 15px;
+    }
+    .bannerHome__img {
+        width: 100%;
+    }
+
+}

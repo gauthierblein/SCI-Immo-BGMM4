@@ -1,11 +1,12 @@
 /* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 
 /* LAYOUT & COLORS*/
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
-    --color-one: #FF6060;
+    --color-one: #1b3979;
     --color-two: #FFFFFF;
     --color-three : #f6f6f6;
 }

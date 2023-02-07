@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom'
 import './header.css'
-import logo from '../../assets/img/LOGO.svg'
+import { BsHouseFill } from "react-icons/bs";
 
 function Header() {
   return (
     <header >
 
-      <Link className="header__link" to="/">
-        <img alt="logo" src={logo} className="header__logo"></img>
+      <Link className="header__logo" to="/">
+        <BsHouseFill size={30} /><p className='logoText'>BGMM4</p>
       </Link>
       <nav>
         <Link className="header__link" to="/">Accueil</Link>
+        <Link className="header__link" to="/projects">Projets</Link>
         <Link className="header__link" to="/about">A Propos</Link>
       </nav>
 

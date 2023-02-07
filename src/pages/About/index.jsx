@@ -1,37 +1,46 @@
 import Header from "../../components/Header"
-import BannerAbout from '../../components/Banner/bannerAbout'
-import Collapse from '../../components/Collapse'
+import Banner from '../../components/Banner/banner'
 import Footer from "../../components/Footer"
+import image from '../../assets/img/banniere.png'
+import gbPic from '../../assets/img/gbPic.jpg'
+import sbfPic from '../../assets/img/sbfPic.jpg'
 import './about.css'
 
-const aboutInformations = [
+
+const team = [
   {
-    title: 'Fiabilité',
-    body: 'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.',
+    picture: gbPic,
+    nom: 'Gauthier B',
+    body: 'Fondateur et gérant de la société en 2020.',
   },
   {
-    title: 'Respect',
-    body: 'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.',
-  },
-  {
-    title: 'Service',
-    body: "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
-  },
-  {
-    title: 'Sécurité',
-    body: "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à lm'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
-  },
+    picture: sbfPic,
+    nom: 'Sam B F',
+    body: 'Actionnaire et conseiller en investissement depuis 2022.',
+  }
 ]
 
   function About () {
     return (
     <div>
       <Header/>
-      <BannerAbout/>
-      <div className="dropdown-wrapper">
-        {aboutInformations.map((info, index) => {
-          return <Collapse props={info.body} title={info.title} key={index} />
+      <Banner image={image}/>
+      <div className="about-container">
+        <h2>L'équipe</h2>
+        {team.map((teamInfos, index) => {
+          return <div className="teamInfos" key={index}>
+              <img src={teamInfos.picture} alt="" />
+              <div classname="teamInfos-text">
+                <h3>{teamInfos.nom}</h3>
+                <p>{teamInfos.body}</p>
+            </div>
+          </div>
         })}
+
+        <h2>Valeurs</h2>
+          <p>La SCI BGMM4, fondée en 2020 à Cruseilles, en Haute-Savoie, souhaite permettre à ses actionnaires d'obtenir des revenus locatifs et un investissement sur le long terme</p>
+          <br />
+          <p>La société vise à proposer à la location des logements modernes, agréables et respectant les exigences environnementales</p>
       </div>
       <Footer/>
     </div>
