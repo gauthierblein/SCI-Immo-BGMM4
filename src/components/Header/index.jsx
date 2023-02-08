@@ -10,6 +10,7 @@ function Header() {
         <BsHouseFill size={30} /><p className='logoText'>BGMM4</p>
       </Link>
       <nav>
+        <Link className="header__link-btn" to="/login">S'identifier</Link>
         <Link className="header__link" to="/">Accueil</Link>
         <Link className="header__link" to="/projects">Projets</Link>
         <Link className="header__link" to="/about">A Propos</Link>
