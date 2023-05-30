@@ -1,0 +1,7 @@
+.titleHome {
+    width: 92%;
+    margin-left: auto; margin-right: auto;
+    font-size: 30px;
+    font-weight: 600 ;
+    color: var(--color-one)
+}

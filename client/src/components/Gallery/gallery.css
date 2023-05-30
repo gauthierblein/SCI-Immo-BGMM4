@@ -1,0 +1,133 @@
+/* Desktop */
+.gallery-container {
+    width: 90%;
+    margin-left: auto ; margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.searchZone {
+    width: 92%;
+    height: 80px;
+    margin-left: auto; margin-right: auto;
+    margin-bottom: 0px; 
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-link {
+    position: relative;
+    cursor: pointer;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 32px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+.gallery-link:hover {
+    opacity: 0.9;
+    transition: 250ms ease-in-out;
+  }
+
+.gallery-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.vente {
+    position: absolute;
+    top: 10px; right: 10px;
+    display: flex;
+    align-items: center; justify-content: center;
+    background-color: var(--color-one);
+    color: var(--color-two);
+    height: 10%;
+    width: 30%;
+    border-radius: 3px
+}
+
+.location {
+    position: absolute;
+    top: 10px; right: 10px;
+    display: flex;
+    align-items: center; justify-content: center;
+    background-color: orangered;
+    color: var(--color-two);
+    height: 10%;
+    width: 30%;
+    border-radius: 3px
+}
+
+.thumb__overlay {
+    position: absolute;
+    top: 0px; left: 0px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.gallery-location {
+    color: var(--color-two);
+    position: absolute;
+    Top: 20px;
+    Left: 20px;
+    margin: auto;
+}
+.gallery-text {
+    color: var(--color-two);
+    position: absolute;
+    Bottom: 80px;
+    Left: 20px;
+    margin: auto;
+    gap: .5rem
+}
+
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+    .gallery-container {
+      margin-left: auto; margin-right: auto;
+      width: 92%;
+    }
+    .gallery-link {
+        position: relative;
+        width: 100%;
+        height: 255px;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    .gallery-text {
+        width: 70%;
+        position: absolute;
+        Bottom: 15px;
+        Left: 19.71px;
+    }
+}
+
+/* Tablettes */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .gallery-container {
+      margin-left: auto; margin-right: auto;
+      width: 90%;
+    }
+    .gallery-link {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    .gallery-text {
+        width: 70%;
+
+    }
+}
